@@ -1,2 +1,0 @@
-# linjingchuan.github.io
-mywebsite
