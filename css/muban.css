@@ -302,7 +302,7 @@ float:left;
 width: 6px; height: 490px;
 }
 #course #scroll-track{width: 6px; height: 490px;border-radius:3px;position: absolute;}
-#course #box{margin-left:10px; width: 358px;height: 490px; border:none;font-size:14px; float: left;position: relative;overflow: hidden; }
+#course #box{margin-left:10px; width: 338px;height: 490px; border:none;font-size:14px; float: left;position: relative;overflow: hidden; }
 
 
 #container{
