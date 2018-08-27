@@ -37,7 +37,7 @@ a:hover{
 }
 #top{
     height: 80px;
-    width:100%;
+    min-width:1024px;
     display:block;
 }
 #top_mainarea{
@@ -47,7 +47,7 @@ a:hover{
 }
 #bottom{
     height: 100px;
-    width:100%;
+    min-width:1024px;
 	display:block;
 	background-color:#606060;
 }
@@ -169,7 +169,7 @@ a:hover{
 }
 
 #center{
-    width:100%;
+    min-width:1024px;
 	display:block;
 }
 h1{
