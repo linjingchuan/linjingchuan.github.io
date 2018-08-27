@@ -203,7 +203,7 @@ width:1024px;
 display:block;
 }
 #screencast{
-width:1024px;
+width:1004px;
 height:520px;
 background-color:#222222;
 }
@@ -278,11 +278,11 @@ padding:0 0;
 
 #scroll-track{width: 6px; height: 450px;border-radius:3px;position: absolute;}
 #scroll-button{width: 4px; height: 200px; background: #d0d0d0;position: absolute;border-radius:3px;margin-left:1px;}
-#box{margin-left:10px; width: 358px;height: 450px; border:none;font-size:14px; float: left;position: relative;overflow: hidden; }
+#box{margin-left:10px; width: 338px;height: 450px; border:none;font-size:14px; float: left;position: relative;overflow: hidden; }
 
 
 #course{
-width:1024px;
+width:1004px;
 height:560px;
 background-color:#222222;
 }
