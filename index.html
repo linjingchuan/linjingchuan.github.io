@@ -9,26 +9,7 @@
  <meta id="“viewport”" content="width=device-width; initial-scale=1.0; minimum-scale=0.5; maximum-scale=2.0; user-scalable=yes;">
  <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
  <link rel="stylesheet" href="css/muban.css" type="text/css">
-<script type="text/javascript">
-    function IsPC(){  
-               var userAgentInfo = navigator.userAgent;  
-               var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
-               var flag = true;  
-               for (var v = 0; v < Agents.length; v++) {  
-                   if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
-               }  
-               return flag;  
-    }
-    /*手机来源跳转*/
-    var source_url=document.referrer;
-    //alert(document.referrer.split('/')[2]);
-    if(!IsPC()){
-        if(source_url=="" || document.referrer.split('/')[2] != "www.wmdsy.work")
-        window.location.href = "http://www.wmdsy.work/index_mobile";
-    }
-    
-    var CURRENT_PAGE = "home";
-</script>
+
 
 
 </head>
