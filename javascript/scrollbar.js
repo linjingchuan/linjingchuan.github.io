@@ -117,6 +117,6 @@ var oDiv = document.getElementById('scroll-button');
 
 
 
-$('#vedio').navbarscroll();
+
 
 		// JavaScript Document
