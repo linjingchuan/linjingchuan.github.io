@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans"><!-- InstanceBegin template="/Templates/muban.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=9">
+  <!-- InstanceBeginEditable name="doctitle" -->
+  <title>某某输入法-首页</title>
+  <script>
+    function refresh(videoname,videotext,videotext1){
+	  document.getElementById("v1").src="mp4/"+videoname+".mp4"; 
+	  document.getElementById("video").load();
+	  var obj = document.getElementById("p");
+    obj.innerHTML= ""+videotext; 
+var obj1 = document.getElementById("p1");
+obj1.innerHTML= ""+videotext1; 
+
+
+	}
+  </script>
+  <!-- InstanceEndEditable -->
+  <meta name="keywords" content="某某拼音,某某双拼，双拼输入法，某某输入法,某某笔画，某某选字，某某键盘，某某官方网站，双拼，笔画,筛选,快速，词库。">
+  <meta name="description" content="某某输入法官方网站,提供全新的输入法软件下载, 某某是非常好用的触摸设备输入法,快速、准确、更通用的输入法，小到智能手机，平板，大到触控投影机，智能冰箱，智能家电，智能触控机器人，智能汽车都能使用。">
+ <meta id="“viewport”" content="width=device-width; initial-scale=1.0; minimum-scale=0.5; maximum-scale=2.0; user-scalable=yes;">
+ <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+<script type="text/javascript">
+
+
+
+
+
+
+    function IsPC(){  
+               var userAgentInfo = navigator.userAgent;  
+               var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+               var flag = true;  
+               for (var v = 0; v < Agents.length; v++) {  
+                   if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
+               }  
+               return flag;  
+    }
+    /*手机来源跳转*/
+    var source_url=document.referrer;
+    //alert(document.referrer.split('/')[2]);
+    if(!IsPC()){
+        if(source_url=="" || document.referrer.split('/')[2] != "www.wmdsy.work")
+        window.location.href = "http://www.wmdsy.work/index_mobile";
+    }
+    
+    var CURRENT_PAGE = "home";
+</script>
+<link rel="stylesheet" href="css/muban.css" type="text/css">
+
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</head>
+<body>
+    <div id="top">
+        <div id="top_mainarea">
+            
+			<div class="logo"><a href="index.html"><img src="images/logo.png" style="width:192px;height:64px;display:inline-block;vertical-align:middle;"></a></div>
+            <div class="h_navigation_word"><a href="course.html">教程</a></div>
+			<div class="h_navigation_word"><a href="screencast.html">挑战录屏</a></div>
+			<div class="h_navigation_word"><a href="items.html">生态支持</a></div>
+			<div class="h_navigation_word"><a href="activity.html">活动</a></div>
+            <div class="h_navigation_word"><a href="mission.html">使命与愿景</a></div>
+           
+        </div>
+
+    </div>
+	<div id="center">
+	  <div id="center_full">
+	    <div id="center_mainarea">
+          <!-- InstanceBeginEditable name="EditRegion1" --><div id="course">
+	      
+		  <div id="left">
+		    <video id="video" width="640" height="400"  loop="loop" controls="controls">
+              <source id="v1" src="mp4/sp.mp4" type="video/mp4">
+			  <object data="mp4/sp.mp4"></object>
+            </video>
+			<div id="videoname">
+			  <p id="p" style="font-size:24px;font-weight:100;height:40px;line-height:40px;margin:10px 0 0 0;color:#f8f8f8;display:block;">教程一、使用声母和韵母更快地拼音</p>
+			  
+			</div>
+			<div style="margin-top:5px;">
+			<p id='p1' style="color:#FFFFFF;text-indent:2em;">汉语拼音，由多个字母构成声母和韵母，再由声母和韵母构成拼音。为了减少键入的次数，我们通常直接输入声母和韵母以更快地完成拼音输入。</p>
+			</div>
+		    
+		  </div>
+		  
+		  <div id="right">
+		    <div id="biaoti" style=" height:40px;line-height:40px; background-color:#666666;width:354px;margin:0 auto; margin-bottom:10px;"><p style="font-size:24px;text-align:center;color:#FFFFFF;margin-bottom:10px;">更多教程</p>
+		    </div>
+            <div id = "box">
+              <div id = "container">
+			     
+			    <div id="videolist">
+				  <ul>
+				  
+				    <li>
+					  <a class="videolist-link" href="javascript:void(0);" onClick="refresh('sp','教程一、使用声母和韵母更快地拼音','汉语拼音，由多个字母构成声母和韵母，再由声母和韵母构成拼音。为了减少键入的次数，我们通常直接输入声母和韵母以更快地完成拼音输入。')">
+					  
+					  <img src="gif/sp.gif" style="width:192px;height:120px;vertical-align:middle;float:left;">
+						
+					  <div><p style="margin:30px 0px 0 10px;text-overflow:ellipsis;">教程一、使用声母和韵母更快地拼音</p>
+					  </div>
+					  </a>
+					</li>
+				    <li>
+					  <a class="videolist-link" href="javascript:void(0);" onClick="refresh('jcz','教程二、通过一次简单短滑，实现任意字纠错','手指从键盘的某一列，滑向左侧或是右侧相邻的列，输入法便从那列的第一行候选栏中确定要改的是左侧或是右侧的错字，并确定它的序号。键盘每一行都隐含一个笔画编码，按下和弹起时手指在键盘的行编号就记录着两个笔画编码。根据序号和两笔笔画编码，输入法就能帮你实现任意字纠错。')">
+					  
+					  <img src="gif/jcz.gif" style="width:192px;height:120px;vertical-align:middle;float:left;">
+						
+					  <div><p style="margin:30px 0px 0 10px;text-overflow:ellipsis;">教程二、通过一次简单短滑，实现任意字纠错</p>
+					  
+					  </div>
+					  </a>
+					</li>
+					<li>
+					  <a class="videolist-link" href="javascript:void(0);" onClick="refresh('jcc','教程三、通过一次简单短滑、实现任意词纠错','手指从键盘的某一列第一行候选栏处向下滑，滑向列的左侧或是右侧，输入法便从那列第一行候选中确定要改的错词首字是左侧或是右侧的字，并确定它的序号。根据滑动的距离确定错词的长度。根据首字序号和长度，输入法就能帮你实现任意词纠错。')">
+					  
+					  <img src="gif/jcc.gif" style="width:192px;height:120px;vertical-align:middle;float:left;">
+						
+					  <div><p style="margin:30px 0px 0 10px;text-overflow:ellipsis;">教程三、通过一次简单短滑、实现任意词纠错</p>
+					  </div>
+					  </a>
+					</li>
+					<li>
+					  <a class="videolist-link" href="javascript:void(0);" onClick="refresh('dzlhd','教程四、通过一次滑动操作，完成多次指令','一次滑动，可分成多个小段，每移动一小段便执行一条指令。从删除键往左滑，可执行多条删除指令，从候选栏处向左或向右滑，可执行多次移动光标指令。')">
+					  
+					  <img src="gif/dzlhd.gif" style="width:192px;height:120px;vertical-align:middle;float:left;">
+						
+					  <div><p style="margin:30px 0px 0 10px;text-overflow:ellipsis;">教程四、通过一次滑动操作，完成多次指令</p>
+					  </div>
+					  </a>
+					</li>
+					
+					
+					
+				  </ul>
+				</div>
+               </div>
+              </div>
+			
+		  <div id="scrollbar">
+		    <div id = "scroll-track">
+              <div id = "scroll-button"></div>
+              </div>
+              <script src="javascript/scrollbar.js"></script>
+		    </div>
+		  </div>
+
+		
+		  
+		
+	  </div><!-- InstanceEndEditable -->
+		</div>
+	  </div>
+	 </div>
+	<div id="bottom">
+	    <div id="bottom_mainarea">
+			Copyright © 2018 WMDSY.WORK  All Rights Reserved. 我们的声音工作室 版权所有
+		</div>
+	</div>
+	
+
+</body>
+<!-- InstanceEnd --></html>

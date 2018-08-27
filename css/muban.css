@@ -1,0 +1,328 @@
+body,div,ul,li,img,video,iframe,ul,li,p,h1{
+    margin:0;
+    padding:0;
+	border:0;
+	list-style-type:none;
+}
+body{
+background-color:#ffffff;
+}
+
+a{
+font-size:18px;
+}
+
+a:link{
+    text-decoration:none;
+	color:#222222;
+}
+a:visited{
+    color:#222222;
+}
+
+a:hover{
+    text-decoration:none;
+	color:#3293fe;
+}
+
+.h_navigation_word a:link{
+    text-decoration:none;
+    font-size:18px;
+}
+.h_navigation_word a:hover{
+    text-decoration:none;
+    font-size:24px;
+}
+#top{
+    height: 80px;
+    width:100%;
+    margin:auto;
+}
+#top_mainarea{
+    height: 80px;
+    width:1024px;
+	margin:auto;
+}
+#bottom{
+    height: 100px;
+    width:100%;
+    margin:auto;
+	background-color:#606060;
+}
+#bottom_mainarea{
+    height: 100px;
+	line-height:100px;
+    width:1024px;
+	margin:auto;
+	font-size:12px;
+	text-align:center;
+	color:#ffffff;
+	
+}
+
+.logo{
+    height:80px;
+	line-height:80px;
+    width:404px;
+    margin:0 auto;
+	margin-left:20px;
+	float:left;`
+	
+	background-color:#3293fe£»
+}
+.h_navigation_word{
+    height:80px;
+    line-height:80px;
+    width:120px;
+    float:left;
+    text-align:center;
+    display:table-cell;
+    vertical-align:middle;
+    
+}
+
+
+
+#main{
+    width:100%;
+	margin:auto;
+	background-color:#ffffff;
+    
+}
+#banner{
+    height: 450px;
+    width:100%;
+	background-color:#27a1ff;
+}
+#banner_mainarea{
+    height: 450px;
+    width:1024px;
+	margin:auto;
+}
+#banner_img{
+    height:450px;
+    width:1024px;
+}
+#download{
+    float:left;
+	height:130px;
+	width:300px;
+	display:block;
+	position:absolute;
+	margin-left:780px;
+	margin-top:-160px;
+	z-index:999;
+}
+#dw-link{
+    margin-top:10px;
+    height:50px;
+    width:200px;
+	display:block;
+	float:left;
+}
+#dw-link a{
+    height:50px;
+	line-height:50px;
+    width:200px;
+	color:#222222;
+	display:block;
+	float:left;
+	background-color:#ffffff;
+	text-align:center;
+	border-radius:10px;
+}
+#part{
+    width:1024px;
+	margin:auto;
+}
+.partOne{
+    height: 500px;
+    width:1024px;
+}
+.partOne .pic{
+    margin-top:50px;
+    float:right;
+}
+.partTwo{
+    height: 500px;
+    width:1024px;
+}
+.partTwo .pic{
+    margin-top:50px;
+    float:left;
+}
+.partOne .js{
+    width:400px;
+	height:300px;
+    margin-top:100px;
+	margin-left:50px;
+    float:left;
+}
+.partTwo .js{
+    width:400px;
+	height:300px;
+    margin-top:100px;
+	margin-right:50px;
+    float:right;
+}
+
+#center{
+    width:100%;
+    margin:auto;
+}
+h1{
+height:120px;
+line-height:120px;
+font-weight:100;
+text-align:center;
+}
+#mission{
+font-weight:100;
+height:640px;
+}
+
+#activity{
+font-weight:100;
+height:640px;
+}
+
+#items{
+height:2250px;
+}
+#items img{
+display:block;
+}
+#screencast{
+width:1024px;
+height:520px;
+background-color:#222222;
+}
+
+#screencast #left{
+margin-top:10px;
+margin-left:10px;
+width:640px;
+height:500px;
+float:left;
+}
+
+#screencast #right{
+margin-top:10px;
+float:left;
+}
+
+
+
+#wenbenkuang{
+border:none;
+margin:0;
+padding:0;
+margin-top:10px;
+}
+#textarea{
+	width:100%;
+	height:80px;
+	margin:0 0;
+	padding:0 0;
+	border:none;
+	background-color:#f8f8f8;
+	box-shadow:0px 2px 5px #888 inset; 
+}
+#video{
+display:block;
+margin:0 0;
+padding:0 0;
+
+
+}
+
+#center_full{
+    width:100%;
+	padding-top:20px;
+	padding-bottom:20px;
+	background-color:#f0f0f0;
+}
+#center_mainarea{
+	width:1024px;
+    margin:auto;
+	background-color:#ffffff;
+}
+
+#insttuction_word{
+    height:60px;
+	line-height:30px;
+    width:300px;
+	float:left;
+}
+
+
+#scroll-track{width: 6px; height: 450px;border-radius:3px;position: absolute;}
+#scroll-button{width: 4px; height: 200px; background: #d0d0d0;position: absolute;border-radius:3px;margin-left:1px;}
+#box{margin-left:10px; width: 358px;height: 450px; border:none;font-size:14px; float: left;position: relative;overflow: hidden; }
+
+
+#course{
+width:1024px;
+height:560px;
+background-color:#222222;
+}
+#course #left{
+margin-top:10px;
+margin-left:10px;
+width:640px;
+height:540px;
+float:left;
+}
+#course #right{
+margin-top:10px;
+float:left;
+}
+#course #scrollbar{
+float:left;
+width: 6px; height: 490px;
+}
+#course #scroll-track{width: 6px; height: 490px;border-radius:3px;position: absolute;}
+#course #box{margin-left:10px; width: 358px;height: 490px; border:none;font-size:14px; float: left;position: relative;overflow: hidden; }
+
+
+#container{
+position: absolute; left:0px; top: 0px;
+
+}
+#screencast #scrollbar{
+float:left;
+width: 6px; height: 450px;
+}
+#videolist{
+}
+#videolist li{
+padding:10px;
+height:120px;
+color:#d0d0d0;
+background-color:#333333;
+}
+#videolist a:link{
+
+color:#ffffff;
+font-size:18px;
+}
+#videolist a:visited{
+font-size:18px;
+color:#ffffff;
+}
+#videolist a:hover{
+font-size:18px;
+color:#0080ff;
+}
+
+.videolist-link{
+color:#FFFFFF;
+}
+.videolist-link div{
+
+line-height:20px;
+height:120px;
+width:142px;
+float:left;
+
+}
