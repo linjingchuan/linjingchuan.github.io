@@ -45,14 +45,14 @@ a:hover{
 }
 #bottom{
     height: 100px;
-    width:100%;
+    width:1024px;
     margin:auto;
 	background-color:#606060;
 }
 #bottom_mainarea{
     height: 100px;
 	line-height:100px;
-    width:1024px;
+	width:1024px;
 	margin:auto;
 	font-size:12px;
 	text-align:center;
