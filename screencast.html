@@ -118,11 +118,18 @@
               </div>
               <script src="javascript/scrollbar.js"></script>
 			  <script type="text/javascript" src="js/navbarscroll.js"></script>
+			  <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/flexible.js"></script>
+<script type="text/javascript" src="js/iscroll.js"></script>
 			  <script type="text/javascript">
 $(function(){
 
 	//demo示例一到四 通过lass调取，一句可以搞定，用于页面中可能有多个导航的情况
-	$('#container').navbarscroll();
+	$('#container').navbarscroll({
+		defaultSelect:6,
+		endClickScroll:function(obj){
+			console.log(obj.text())
+		});
 	</script>
 			  
 			
