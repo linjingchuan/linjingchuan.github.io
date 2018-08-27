@@ -252,7 +252,7 @@ padding:0 0;
 	padding-bottom:20px;
 	background-color:#f0f0f0;
 }
-#center_full_movie{
+#center_full_vedio{
     width:100%;
 	padding-top:20px;
 	padding-bottom:20px;
@@ -263,7 +263,7 @@ padding:0 0;
         margin:auto;
 	background-color:#ffffff;
 }
-#center_mainarea_movie{
+#center_mainarea_vedio{
 	width:1004px;
         margin:auto;
 	background-color:#202020;
@@ -342,7 +342,7 @@ color:#FFFFFF;
 
 line-height:20px;
 height:120px;
-width:142px;
+width:122px;
 float:left;
 
 }
