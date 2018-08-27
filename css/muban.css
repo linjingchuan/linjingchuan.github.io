@@ -35,7 +35,7 @@ a:hover{
 }
 #top{
     height: 80px;
-    width:100%;
+    width:auto;
     margin:auto;
 }
 #top_mainarea{
@@ -45,7 +45,7 @@ a:hover{
 }
 #bottom{
     height: 100px;
-    width:1024px;
+    width:auto;
     margin:auto;
 	background-color:#606060;
 }
@@ -167,7 +167,7 @@ a:hover{
 }
 
 #center{
-    width:100%;
+    width:auto;
     margin:auto;
 }
 h1{
