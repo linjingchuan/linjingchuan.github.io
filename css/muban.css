@@ -37,7 +37,8 @@ a:hover{
 }
 #top{
     height: 80px;
-    width:inherit;
+    width:100%;
+    display:block;
 }
 #top_mainarea{
     height: 80px;
@@ -46,7 +47,8 @@ a:hover{
 }
 #bottom{
     height: 100px;
-    width:inherit;
+    width:100%;
+	display:block;
 	background-color:#606060;
 }
 #bottom_mainarea{
@@ -167,8 +169,8 @@ a:hover{
 }
 
 #center{
-    width:inherit;
-	
+    width:100%;
+	display:block;
 }
 h1{
 height:120px;
