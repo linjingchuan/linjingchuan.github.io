@@ -124,4 +124,37 @@ document.addEventListener('touchmove',function(event){
 
 
 
+function handleTouchEvent(event){
+//只跟踪一次触摸
+if (event.touches.length == 1){
+//var output = document.getElementById("output");
+switch(event.type){
+case "touchstart":
+//output.innerHTML = "Touch started (" + event.touches[0].clientX +
+//"," + event.touches[0].clientY + ")";
+break;
+case "touchend":
+//output.innerHTML += "<br>Touch ended (" +
+//event.changedTouches[0].clientX + "," +
+//event.changedTouches[0].clientY + ")";
+break;
+case "touchmove":
+event.preventDefault(); //阻止滚动
+		
+oContainer.style.top=event.changedTouches[0].clientY；
+		
+		
+//output.innerHTML += "<br>Touch moved (" +
+//event.changedTouches[0].clientX + "," +
+//event.changedTouches[0].clientY + ")";
+break;
+}
+}
+}
+EventUtil.addHandler(document, "touchstart", handleTouchEvent);
+EventUtil.addHandler(document, "touchend", handleTouchEvent);
+EventUtil.addHandler(document, "touchmove", handleTouchEvent);
+
+
+
 		// JavaScript Document
