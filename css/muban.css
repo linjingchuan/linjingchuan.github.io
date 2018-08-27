@@ -173,6 +173,7 @@ a:hover{
 	display:block;
 }
 h1{
+display:block;
 height:120px;
 line-height:120px;
 font-weight:100;
