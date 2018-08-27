@@ -117,15 +117,6 @@ var oDiv = document.getElementById('scroll-button');
 
 
 
-
-document.addEventListener('touchmove',function(event){
-            event.preventDefault(); },false);
-
-var dy=0;
-touch.on('#container','drag',function(ev){
-	this.style.webkitTransform="translate3d("+0+"px,"+dy+ev.y+"px,0)"
-})
-
-
+$('#container').navbarscroll();
 
 		// JavaScript Document
