@@ -21,32 +21,7 @@
   <meta name="description" content="某某输入法官方网站,提供全新的输入法软件下载, 某某是非常好用的触摸设备输入法,快速、准确、更通用的输入法，小到智能手机，平板，大到触控投影机，智能冰箱，智能家电，智能触控机器人，智能汽车都能使用。">
  
  <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
-<script type="text/javascript">
 
-
-
-
-
-
-    function IsPC(){  
-               var userAgentInfo = navigator.userAgent;  
-               var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
-               var flag = true;  
-               for (var v = 0; v < Agents.length; v++) {  
-                   if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
-               }  
-               return flag;  
-    }
-    /*手机来源跳转*/
-    var source_url=document.referrer;
-    //alert(document.referrer.split('/')[2]);
-    if(!IsPC()){
-        if(source_url=="" || document.referrer.split('/')[2] != "www.wmdsy.work")
-        window.location.href = "http://www.wmdsy.work/index_mobile";
-    }
-    
-    var CURRENT_PAGE = "home";
-</script>
 <link rel="stylesheet" href="css/muban.css" type="text/css">
 
 <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
@@ -66,9 +41,10 @@
 
     </div>
 	<div id="center">
-	  <div id="center_full">
-	    <div id="center_mainarea">
+
           <!-- InstanceBeginEditable name="EditRegion1" -->
+	<div id="center_full_movie">
+	    <div id="center_mainarea_movie">
 	    <div id="screencast">
 		  <div id="left">
 		    <video id="video" width="640" height="360"  loop="loop" controls="controls">
@@ -144,10 +120,10 @@
 		
 		  
 		</div>
-		
-	  <!-- InstanceEndEditable -->
 		</div>
 	  </div>
+	  <!-- InstanceEndEditable -->
+
 	 </div>
 	<div id="bottom">
 	    <div id="bottom_mainarea">
