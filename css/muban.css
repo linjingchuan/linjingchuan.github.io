@@ -68,7 +68,7 @@ a:hover{
 	margin-left:20px;
 	float:left;`
 	
-	background-color:#3293fe£»
+	background-color:#3293feÂ£Â»
 }
 .h_navigation_word{
     height:80px;
@@ -179,15 +179,18 @@ text-align:center;
 #mission{
 font-weight:100;
 height:640px;
+width:1024px;
 }
 
 #activity{
 font-weight:100;
 height:640px;
+width:1024px;
 }
 
 #items{
 height:2250px;
+width:1024px;
 }
 #items img{
 display:block;
