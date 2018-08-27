@@ -5,10 +5,9 @@ body,div,ul,li,img,video,iframe,ul,li,p,h1{
 	list-style-type:none;
 }
 body{
-background-color:#ffffff;
+background-color:#0080ff;
 width:100%;
 height:100%;
-position:absolute;
 }
 
 a{
