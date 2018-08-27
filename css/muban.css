@@ -314,8 +314,27 @@ float:left;
 width: 6px; height: 450px;
 }
 #videolist{
+
+display:flex;
+            /*-webkit-flex-wrap:nowrap;*/
+            /*-ms-flex-wrap:nowrap;*/
+            flex-wrap:nowrap;
+            /*-webkit-box-pack:justify;*/
+            /*-webkit-justify-content:space-between;*/
+            /*-ms-flex-pack:justify;*/
+        justify-content;	
+	space-between;
+        background:#FF4878;
+	padding:0;
+	overflow:auto;
+	
+	
 }
 #videolist li{
+	
+	flex:1 0 auto;
+	
+	
 padding:10px;
 height:120px;
 color:#d0d0d0;
