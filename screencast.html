@@ -170,11 +170,7 @@
 	
 
 	
-	
-<script type="text/javascript" src="javascript/jquery.min.js"></script>
-<script type="text/javascript" src="javascript/flexible.js"></script>
-<script type="text/javascript" src="javascript/iscroll.js"></script>
-<script type="text/javascript" src="javascript/navbarscroll.js"></script>
+
 
 <script type="text/javascript">
 	
@@ -184,10 +180,11 @@
         
  var box = document.getElementById("box");
 	 var container = document.getElementById("container");	
+		var scrollbtn = document.getElementById("scroll-button");	
     box.addEventListener('touchstart',touch, false);
     box.addEventListener('touchmove',touch, false);
     box.addEventListener('touchend',touch, false);
-     var fromy,endy,top;
+     var fromy,top,top1;
     function touch (event){
         var event = event || window.event;
         
@@ -198,17 +195,20 @@
 			
 			fromy=event.touches[0].clientY;
 			top=container.offsetTop;
+			top1=scrollbtn.offsetTop;
                 break;
             case "touchend":
                 //oInp.innerHTML = "<br>Touch end (" + event.changedTouches[0].clientX + "," + event.changedTouches[0].clientY + ")";
                 event.preventDefault();
 			container.style.top=top+event.touches[0].clientY-fromy+'px';
+			scrollbtn.style.top=top1+event.touches[0].clientY-fromy+'px';
 			break;
             case "touchmove":
                 event.preventDefault();
                 //oInp.innerHTML = "<br>Touch moved (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")";
                 //container.style.top=event.touches[0].clientY+'px';
 			container.style.top=top+event.touches[0].clientY-fromy+'px';
+			scrollbtn.style.top=top1+event.touches[0].clientY-fromy+'px';
 			break;
         }
          
