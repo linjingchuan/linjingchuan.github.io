@@ -180,9 +180,10 @@
 	
 
 	function load (){
+		
          var oInp = document.getElementById("bottom_mainarea");
  var container = document.getElementById("container");
-		
+	var top=container.style.top;	
     container.addEventListener('touchstart',touch, false);
     container.addEventListener('touchmove',touch, false);
     container.addEventListener('touchend',touch, false);
@@ -195,17 +196,17 @@
             case "touchstart":
                 //oInp.innerHTML = "Touch started (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")";
 		fromy=event.touches[0].clientY;
-			
+			top=container.style.top;
                 break;
             case "touchend":
                 //oInp.innerHTML = "<br>Touch end (" + event.changedTouches[0].clientX + "," + event.changedTouches[0].clientY + ")";
-                container.style.top=event.touches[0].clientY-fromy+'px';
+                container.style.top=top+event.touches[0].clientY-fromy+'px';
 			break;
             case "touchmove":
                 event.preventDefault();
                 //oInp.innerHTML = "<br>Touch moved (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")";
                 //container.style.top=event.touches[0].clientY+'px';
-			container.style.top=event.touches[0].clientY-fromy+'px';
+			container.style.top=top+event.touches[0].clientY-fromy+'px';
 			break;
         }
          
