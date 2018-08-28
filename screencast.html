@@ -189,18 +189,21 @@
         var event = event || window.event;
          
         var oInp = document.getElementById("bottom_mainarea");
- 
+ var container = document.getElementById("container");
         switch(event.type){
             case "touchstart":
                 oInp.innerHTML = "Touch started (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")";
+			container.style.top=event.touches[0].clientY+'px';
                 break;
             case "touchend":
                 oInp.innerHTML = "<br>Touch end (" + event.changedTouches[0].clientX + "," + event.changedTouches[0].clientY + ")";
-                break;
+                container.style.top=event.touches[0].clientY+'px';
+			break;
             case "touchmove":
                 event.preventDefault();
                 oInp.innerHTML = "<br>Touch moved (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")";
-                break;
+                container.style.top=event.touches[0].clientY+'px';
+			break;
         }
          
     }
