@@ -183,6 +183,7 @@
      var fromy,top,top1;
 	var len1=container.offsetHeight-box.offsetHeight;
 		var len2=scrolltrack.offsetHeight-scrollbtn.offsetHeight;
+		    var scale=len2/len1;
     function touch (event){
         var event = event || window.event;
         
@@ -206,12 +207,12 @@
 			 }else{
 				 container.style.top=top+event.touches[0].clientY-fromy+'px';
 			 }	 
-			if(top1-(event.touches[0].clientY-fromy)<=0){
+			if(top1-(event.touches[0].clientY-fromy)*scale<=0){
 				scrollbtn.style.top=0+'px';
-			 }else if(top1-(event.touches[0].clientY-fromy)>=len2){
+			 }else if(top1-(event.touches[0].clientY-fromy)*scale>=len2){
 				scrollbtn.style.top=len2+'px';
 			 }else{
-				 scrollbtn.style.top=top1-(event.touches[0].clientY-fromy)+'px';
+				 scrollbtn.style.top=top1-(event.touches[0].clientY-fromy)*scale+'px';
 			 }
 	
 			break;
@@ -227,12 +228,12 @@
 			 }else{
 				 container.style.top=top+event.touches[0].clientY-fromy+'px';
 			 }	 
-			if(top1-(event.touches[0].clientY-fromy)<=0){
+			if(top1-(event.touches[0].clientY-fromy)*scale<=0){
 				scrollbtn.style.top=0+'px';
-			 }else if(top1-(event.touches[0].clientY-fromy)>=len2){
+			 }else if(top1-(event.touches[0].clientY-fromy)*scale>=len2){
 				scrollbtn.style.top=len2+'px';
 			 }else{
-				 scrollbtn.style.top=top1-(event.touches[0].clientY-fromy)+'px';
+				 scrollbtn.style.top=top1-(event.touches[0].clientY-fromy)*scale+'px';
 			 }
 			
 			
