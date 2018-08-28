@@ -179,9 +179,10 @@
 <script type="text/javascript">
 	
 	var fromx=0.0,fromy=0.0,endx=0.0,endy=0.0,x=0.0,y = 0.0;
-            var panel = document.getElementById("vediolist");
+            var panel = document.getElementById("scroll_link");
             panel.addEventListener("touchstart",function(event){
                 if (event.targetTouches.length == 1) {
+			event.preventDefault();
                     var touch = event.targetTouches[0];
                     fromx = touch.screenX;
                     console.log(fromx);
