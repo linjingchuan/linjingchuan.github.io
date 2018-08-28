@@ -6,16 +6,7 @@
   <!-- InstanceBeginEditable name="doctitle" -->
   <title>某某输入法-教程</title>
   <script>
-    function refresh(videoname,videotext,videotext1){
-	  document.getElementById("v1").src="mp4/"+videoname+".mp4"; 
-	  document.getElementById("video").load();
-	  var obj = document.getElementById("p");
-    obj.innerHTML= ""+videotext; 
-var obj1 = document.getElementById("p1");
-obj1.innerHTML= ""+videotext1; 
 
-
-	}
   </script>
   <!-- InstanceEndEditable -->
   <meta name="keywords" content="某某拼音,某某双拼，双拼输入法，某某输入法,某某笔画，某某选字，某某键盘，某某官方网站，双拼，笔画,筛选,快速，词库。">
@@ -125,11 +116,16 @@ obj1.innerHTML= ""+videotext1;
 		    </div>
 		  </div>
 <script>
-    function refresh(videoname,videotext){
+       function refresh(videoname,videotext,videotext1){
 	  document.getElementById("v1").src="mp4/"+videoname+".mp4"; 
 	  document.getElementById("video").load();
 	  var obj = document.getElementById("p");
     obj.innerHTML= ""+videotext; 
+var obj1 = document.getElementById("p1");
+obj1.innerHTML= ""+videotext1; 
+
+
+	}
 
 
 	    function load (){
