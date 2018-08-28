@@ -244,7 +244,10 @@ $(function(){
 	$('.wrapper').navbarscroll();
 	
 	
-		var slider = {
+		
+
+});
+	var slider = {
 //判断设备是否支持touch事件
 touch:('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch,
 slider:document.getElementById('container'),
@@ -317,8 +320,8 @@ if(!!self.touch) self.slider.addEventListener('touchstart',self.events,false); /
 };
 
 slider.init();
-
-});
+	
+	
 </script>
 
 </body>
