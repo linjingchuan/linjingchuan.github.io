@@ -187,7 +187,7 @@
     container.addEventListener('touchstart',touch, false);
     container.addEventListener('touchmove',touch, false);
     container.addEventListener('touchend',touch, false);
-     var fromy,endy;
+     var fromy,endy,y;
     function touch (event){
         var event = event || window.event;
         
@@ -196,7 +196,7 @@
                 //oInp.innerHTML = "Touch started (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")";
 		event.preventDefault();
 			
-			fromy=container.style.top+event.touches[0].clientY;
+			fromy=event.touches[0].clientY;
 			
                 break;
             case "touchend":
