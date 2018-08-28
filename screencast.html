@@ -4,11 +4,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=9">
   <!-- InstanceBeginEditable name="doctitle" -->
-  <title>某某输入法-首页</title>
+  <title>某某输入法-挑战录屏</title>
   
   <!-- InstanceEndEditable -->
   <meta name="keywords" content="某某拼音,某某双拼，双拼输入法，某某输入法,某某笔画，某某选字，某某键盘，某某官方网站，双拼，笔画,筛选,快速，词库。">
-  <meta name="description" content="某某输入法官方网站,提供全新的输入法软件下载, 某某是非常好用的触摸设备输入法,快速、准确、更通用的输入法，小到智能手机，平板，大到触控投影机，智能冰箱，智能家电，智能触控机器人，智能汽车都能使用。">
+  <meta name="description" content="某某输入法官方网站,提供全新的输入法软件下载, 某某是非常好用的触摸设备输入法,快速、准确、更通用的输入法，小到智能手机，平板，大到触控投影机，智能家电，智能汽车都能使用。">
  
  <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
 
@@ -199,7 +199,7 @@
                 //oInp.innerHTML = "<br>Touch end (" + event.changedTouches[0].clientX + "," + event.changedTouches[0].clientY + ")";
                 //event.preventDefault();
 			
-			scrollbtn.style.top=top1-(event.touches[0].clientY-fromy)+'px';
+			
 			if(top+event.touches[0].clientY-fromy<=0){
 				container.style.top=0+'px';
 			 }else if(top+event.touches[0].clientY-fromy>=len1){
@@ -208,19 +208,31 @@
 				 container.style.top=top+event.touches[0].clientY-fromy+'px';
 			 }	 
 			if(top1-(event.touches[0].clientY-fromy)<=0){
-				container.style.top=0+'px';
+				scrollbtn.style.top=0+'px';
 			 }else if(top1-(event.touches[0].clientY-fromy)>=len2){
-				container.style.top=len2+'px';
+				scrollbtn.style.top=len2+'px';
 			 }else{
-				 container.style.top=top1-(event.touches[0].clientY-fromy)+'px';
+				 scrollbtn.style.top=top1-(event.touches[0].clientY-fromy)+'px';
 			 }	
 			break;
             case "touchmove":
                 event.preventDefault();
                 //oInp.innerHTML = "<br>Touch moved (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")";
                 //container.style.top=event.touches[0].clientY+'px';
-			container.style.top=top+event.touches[0].clientY-fromy+'px';
-			scrollbtn.style.top=top1-(event.touches[0].clientY-fromy)+'px';
+			if(top+event.touches[0].clientY-fromy<=0){
+				container.style.top=0+'px';
+			 }else if(top+event.touches[0].clientY-fromy>=len1){
+				container.style.top=len1+'px';
+			 }else{
+				 container.style.top=top+event.touches[0].clientY-fromy+'px';
+			 }	 
+			if(top1-(event.touches[0].clientY-fromy)<=0){
+				scrollbtn.style.top=0+'px';
+			 }else if(top1-(event.touches[0].clientY-fromy)>=len2){
+				scrollbtn.style.top=len2+'px';
+			 }else{
+				 scrollbtn.style.top=top1-(event.touches[0].clientY-fromy)+'px';
+			 }
 			break;
         }
          
