@@ -184,7 +184,7 @@
     document.addEventListener('touchstart',touch, false);
     document.addEventListener('touchmove',touch, false);
     document.addEventListener('touchend',touch, false);
-     
+     var fromy,endy;
     function touch (event){
         var event = event || window.event;
          
@@ -192,17 +192,19 @@
  var container = document.getElementById("container");
         switch(event.type){
             case "touchstart":
-                oInp.innerHTML = "Touch started (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")";
-			container.style.top=event.touches[0].clientY+'px';
+                //oInp.innerHTML = "Touch started (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")";
+		fromy=event.touches[0].clientY;
+			
                 break;
             case "touchend":
-                oInp.innerHTML = "<br>Touch end (" + event.changedTouches[0].clientX + "," + event.changedTouches[0].clientY + ")";
-                container.style.top=event.touches[0].clientY+'px';
+                //oInp.innerHTML = "<br>Touch end (" + event.changedTouches[0].clientX + "," + event.changedTouches[0].clientY + ")";
+                container.style.top=event.touches[0].clientY-fromy+'px';
 			break;
             case "touchmove":
                 event.preventDefault();
-                oInp.innerHTML = "<br>Touch moved (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")";
-                container.style.top=event.touches[0].clientY+'px';
+                //oInp.innerHTML = "<br>Touch moved (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")";
+                //container.style.top=event.touches[0].clientY+'px';
+			container.style.top=event.touches[0].clientY-fromy+'px';
 			break;
         }
          
