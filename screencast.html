@@ -180,16 +180,17 @@
 	
 
 	function load (){
- 
-    document.addEventListener('touchstart',touch, false);
-    document.addEventListener('touchmove',touch, false);
-    document.addEventListener('touchend',touch, false);
+         var oInp = document.getElementById("bottom_mainarea");
+ var container = document.getElementById("container");
+		
+    container.addEventListener('touchstart',touch, false);
+    container.addEventListener('touchmove',touch, false);
+    container.addEventListener('touchend',touch, false);
      var fromy,endy;
     function touch (event){
         var event = event || window.event;
          
-        var oInp = document.getElementById("bottom_mainarea");
- var container = document.getElementById("container");
+
         switch(event.type){
             case "touchstart":
                 //oInp.innerHTML = "Touch started (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")";
