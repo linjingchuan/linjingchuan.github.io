@@ -198,18 +198,46 @@
             case "touchend":
                 //oInp.innerHTML = "<br>Touch end (" + event.changedTouches[0].clientX + "," + event.changedTouches[0].clientY + ")";
                 //event.preventDefault();
-			 container.style.top=top+event.touches[0].clientY-fromy+'px';
-			scrollbtn.style.top=top1-(event.touches[0].clientY-fromy)+'px';
-			
+
+			if(top+event.touches[0].clientY-fromy<=0){
+				container.style.top=0+'px';
+			 }else if(top+event.touches[0].clientY-fromy>=len1){
+				container.style.top=len1+'px';
+			 }else{
+				 container.style.top=top+event.touches[0].clientY-fromy+'px';
+			 }	 
+			if(top1-(event.touches[0].clientY-fromy)<=0){
+				scrollbtn.style.top=0+'px';
+			 }else if(top1-(event.touches[0].clientY-fromy)>=len2){
+				scrollbtn.style.top=len2+'px';
+			 }else{
+				 scrollbtn.style.top=top1-(event.touches[0].clientY-fromy)+'px';
+			 }
 	
 			break;
             case "touchmove":
                 event.preventDefault();
                 //oInp.innerHTML = "<br>Touch moved (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")";
                 //container.style.top=event.touches[0].clientY+'px';
-			container.style.top=top+event.touches[0].clientY-fromy+'px';
-			scrollbtn.style.top=top1-(event.touches[0].clientY-fromy)+'px';
-
+	
+			if(top+event.touches[0].clientY-fromy<=0){
+				container.style.top=0+'px';
+			 }else if(top+event.touches[0].clientY-fromy>=len1){
+				container.style.top=len1+'px';
+			 }else{
+				 container.style.top=top+event.touches[0].clientY-fromy+'px';
+			 }	 
+			if(top1-(event.touches[0].clientY-fromy)<=0){
+				scrollbtn.style.top=0+'px';
+			 }else if(top1-(event.touches[0].clientY-fromy)>=len2){
+				scrollbtn.style.top=len2+'px';
+			 }else{
+				 scrollbtn.style.top=top1-(event.touches[0].clientY-fromy)+'px';
+			 }
+			
+			
+			
+			
 			break;
         }
          
