@@ -181,8 +181,8 @@
     box.addEventListener('touchmove',touch, false);
     box.addEventListener('touchend',touch, false);
      var fromy,top,top1;
-	var w1=container.offsetHeight-box.offsetHeight;
-		var w2=scrolltrack.offsetHeight-scrollbtn.offsetHeight;
+	var len1=container.offsetHeight-box.offsetHeight;
+		var len2=scrolltrack.offsetHeight-scrollbtn.offsetHeight;
     function touch (event){
         var event = event || window.event;
         
@@ -198,8 +198,22 @@
             case "touchend":
                 //oInp.innerHTML = "<br>Touch end (" + event.changedTouches[0].clientX + "," + event.changedTouches[0].clientY + ")";
                 //event.preventDefault();
-			container.style.top=top+event.touches[0].clientY-fromy+'px';
+			
 			scrollbtn.style.top=top1-(event.touches[0].clientY-fromy)+'px';
+			if(top+event.touches[0].clientY-fromy<=0){
+				container.style.top=0+'px';
+			 }else if(top+event.touches[0].clientY-fromy>=len1){
+				container.style.top=len1+'px';
+			 }else{
+				 container.style.top=top+event.touches[0].clientY-fromy+'px';
+			 }	 
+			if(top1-(event.touches[0].clientY-fromy)<=0){
+				container.style.top=0+'px';
+			 }else if(top1-(event.touches[0].clientY-fromy)>=len2){
+				container.style.top=len2+'px';
+			 }else{
+				 container.style.top=top1-(event.touches[0].clientY-fromy)+'px';
+			 }	
 			break;
             case "touchmove":
                 event.preventDefault();
