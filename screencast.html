@@ -99,7 +99,7 @@
 			    <div id="videolist">
 				  <ul>
 				    <li>
-					  <a id='scroll_link' class="videolist-link" href="javascript:void(0);" onClick="refresh('test1','速度测试一')">
+					  <a class="videolist-link" href="javascript:void(0);" onClick="refresh('test1','速度测试一')">
 					  
 					  <img src="gif/test1.gif" style="width:192px;height:120px;vertical-align:middle;float:left;">
 						
@@ -178,52 +178,34 @@
 
 <script type="text/javascript">
 	
-	var fromx=0.0,fromy=0.0,endx=0.0,endy=0.0,x=0.0,y = 0.0;
-            var panel = document.getElementById("scroll_link");
-            panel.addEventListener("touchstart",function(event){
-                if (event.targetTouches.length == 1) {
-			event.preventDefault();
-                    var touch = event.targetTouches[0];
-                    fromx = touch.screenX;
-                    console.log(fromx);
-                    fromy = touch.screenY;
-                }
-            });
-            panel.addEventListener("touchmove",function(event){
-                if (event.targetTouches.length == 1) {
-                    event.preventDefault();
-                    var touch = event.targetTouches[0];
-                    endx = touch.screenX;
-                    endy = touch.screenY;
-			panel.style.top=endy-fromy+'px';
-                }
 
-
-            });
-            panel.addEventListener("touchend",function(event){
+	function load (){
+ 
+    document.addEventListener('touchstart',touch, false);
+    document.addEventListener('touchmove',touch, false);
+    document.addEventListener('touchend',touch, false);
+     
+    function touch (event){
+        var event = event || window.event;
+         
+        var oInp = document.getElementById("bottom_mainarea");
+ 
+        switch(event.type){
+            case "touchstart":
+                oInp.innerHTML = "Touch started (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")";
+                break;
+            case "touchend":
+                oInp.innerHTML = "<br>Touch end (" + event.changedTouches[0].clientX + "," + event.changedTouches[0].clientY + ")";
+                break;
+            case "touchmove":
                 event.preventDefault();
-                var move = false;
-                x = endx - fromx;
-                y = endy - fromy;
-                //console.log(x);
-                //console.log(y);
-		    panel.style.top=endy-fromy+'px';
-                if(Math.abs(x/y)>=2.0 && x>=0.0 ){
-                    //right
-                    //move = rightAction();
-                }else if(Math.abs(x/y)>=2.0 && x<=0.0){
-                    //left
-                   // move = leftAction();
-                }else if(Math.abs(y/x)>=2.0 && y<=0.0){
-                    //上
-                    //move = upAction();
-                }else if(Math.abs(y/x) >=2.0 && y>=0.0){
-                    //下
-                    //move = downAction();
-                }
-｝
-	
-	
+                oInp.innerHTML = "<br>Touch moved (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")";
+                break;
+        }
+         
+    }
+}
+window.addEventListener('load',load, false);
 	
 
 	
