@@ -115,7 +115,7 @@ var oDiv = document.getElementById('scroll-button');
                     return false;*/
         },false);
 
-function load (){
+
 		
         
  var box = document.getElementById("box");
@@ -183,7 +183,7 @@ function load (){
          
     }
 }
-window.addEventListener('load',load, false);
+
 
 
 
