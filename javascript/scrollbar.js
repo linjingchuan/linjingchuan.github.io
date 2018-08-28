@@ -116,6 +116,7 @@ var oDiv = document.getElementById('scroll-button');
         },false);
 
 
+		function load (){
 		
         
  var box = document.getElementById("box");
@@ -185,6 +186,7 @@ var oDiv = document.getElementById('scroll-button');
 }
 
 
+window.addEventListener('load',load, false);
 
 
 
