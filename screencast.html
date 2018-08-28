@@ -14,7 +14,37 @@
 
 	<link rel="stylesheet" href="css/muban.css" type="text/css">
 	
+	 <script>
+    function refresh(videoname,videotext){
+	  document.getElementById("v1").src="mp4/"+videoname+".mp4"; 
+	  document.getElementById("video").load();
+	  var obj = document.getElementById("p");
+    obj.innerHTML= ""+videotext; 
+
+
+
+	}
+  </script>
 	
+	
+	<style type="text/css">
+	
+
+	.clearfix:after{content:".";display:block;height:0;clear: both;visibility:hidden;}
+	.clearfix{*zoom:1;}
+	.wrap{min-width: 320px;max-width:768px;margin:0 auto;overflow:hidden;position:relative;}
+
+	.htit{line-height:300x;padding:0 .3rem;color:#ff8e2e;font-size: .4rem;margin:1rem 0 .4rem 0}
+	
+
+	.wrapper04 {position:relative;height: 1rem;width: 80%;overflow: hidden;margin:0 auto;background:#ddd}
+	.wrapper04 .scroller {position:absolute}
+	.wrapper04 .scroller li {height: 1rem;color:#333;float: left;line-height: 1rem;font-size:100px;text-align: center}
+	.wrapper04 .scroller li a{color:#333;display:block;margin:0 .3rem}
+	.wrapper04 .scroller li.cur{background:#1cbb9b}
+	.wrapper04 .scroller li.cur a{color:#fff;}
+
+</style>
 	
 
 
@@ -165,23 +195,6 @@ $(function(){
 
 });
 </script>
-<style type="text/css">
-	
 
-	.clearfix:after{content:".";display:block;height:0;clear: both;visibility:hidden;}
-	.clearfix{*zoom:1;}
-	.wrap{min-width: 320px;max-width:768px;margin:0 auto;overflow:hidden;position:relative;}
-
-	.htit{line-height:300x;padding:0 .3rem;color:#ff8e2e;font-size: .4rem;margin:1rem 0 .4rem 0}
-	
-
-	.wrapper04 {position:relative;height: 1rem;width: 80%;overflow: hidden;margin:0 auto;background:#ddd}
-	.wrapper04 .scroller {position:absolute}
-	.wrapper04 .scroller li {height: 1rem;color:#333;float: left;line-height: 1rem;font-size:100px;text-align: center}
-	.wrapper04 .scroller li a{color:#333;display:block;margin:0 .3rem}
-	.wrapper04 .scroller li.cur{background:#1cbb9b}
-	.wrapper04 .scroller li.cur a{color:#fff;}
-
-</style>
 </body>
 <!-- InstanceEnd --></html>
