@@ -187,7 +187,7 @@
     container.addEventListener('touchstart',touch, false);
     container.addEventListener('touchmove',touch, false);
     container.addEventListener('touchend',touch, false);
-     var fromy,endy,top=container.style.top;
+     var fromy,endy;
     function touch (event){
         var event = event || window.event;
         
@@ -195,20 +195,20 @@
             case "touchstart":
                 //oInp.innerHTML = "Touch started (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")";
 		event.preventDefault();
-			top=container.style.top;
+			
 			fromy=event.touches[0].clientY;
 			
                 break;
             case "touchend":
                 //oInp.innerHTML = "<br>Touch end (" + event.changedTouches[0].clientX + "," + event.changedTouches[0].clientY + ")";
                 event.preventDefault();
-			container.style.top=top+event.touches[0].clientY-fromy+'px';
+			container.style.top=container.style.top+event.touches[0].clientY-fromy+'px';
 			break;
             case "touchmove":
                 event.preventDefault();
                 //oInp.innerHTML = "<br>Touch moved (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")";
                 //container.style.top=event.touches[0].clientY+'px';
-			container.style.top=top+event.touches[0].clientY-fromy+'px';
+			container.style.top=container.style.top+event.touches[0].clientY-fromy+'px';
 			break;
         }
          
