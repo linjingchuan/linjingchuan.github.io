@@ -197,18 +197,18 @@
 		event.preventDefault();
 			
 			fromy=event.touches[0].clientY;
-			top=container.style.top;
+			top=container.offsetTop;
                 break;
             case "touchend":
                 //oInp.innerHTML = "<br>Touch end (" + event.changedTouches[0].clientX + "," + event.changedTouches[0].clientY + ")";
                 event.preventDefault();
-			container.style.top=event.touches[0].clientY-fromy+'px';
+			container.style.top=top+event.touches[0].clientY-fromy+'px';
 			break;
             case "touchmove":
                 event.preventDefault();
                 //oInp.innerHTML = "<br>Touch moved (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")";
                 //container.style.top=event.touches[0].clientY+'px';
-			container.style.top=event.touches[0].clientY-fromy+'px';
+			container.style.top=top+event.touches[0].clientY-fromy+'px';
 			break;
         }
          
