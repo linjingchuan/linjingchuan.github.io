@@ -181,12 +181,12 @@
 
 	function load (){
 		
-         var oInp = document.getElementById("bottom_mainarea");
- var container = document.getElementById("container");
-		
-    container.addEventListener('touchstart',touch, false);
-    container.addEventListener('touchmove',touch, false);
-    container.addEventListener('touchend',touch, false);
+        
+ var box = document.getElementById("box");
+	 var container = document.getElementById("container");	
+    box.addEventListener('touchstart',touch, false);
+    box.addEventListener('touchmove',touch, false);
+    box.addEventListener('touchend',touch, false);
      var fromy,endy,y;
     function touch (event){
         var event = event || window.event;
