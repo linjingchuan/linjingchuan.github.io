@@ -116,7 +116,9 @@
 <script>
        function refresh(videoname,videotext,videotext1){
 	  document.getElementById("v1").src="mp4/"+videoname+".mp4"; 
-	  document.getElementById("video").load();
+	       var vedio=  document.getElementById("video");
+	vedio.load();
+	       vedio.play();
 	  var obj = document.getElementById("p");
     obj.innerHTML= ""+videotext; 
 var obj1 = document.getElementById("p1");
