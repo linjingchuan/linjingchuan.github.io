@@ -99,7 +99,7 @@
 			    <div id="videolist">
 				  <ul>
 				    <li>
-					  <a class="videolist-link" href="javascript:void(0);" onClick="refresh('test1','速度测试一')">
+					  <a id='scroll_link' class="videolist-link" href="javascript:void(0);" onClick="refresh('test1','速度测试一')">
 					  
 					  <img src="gif/test1.gif" style="width:192px;height:120px;vertical-align:middle;float:left;">
 						
@@ -179,7 +179,7 @@
 <script type="text/javascript">
 	
 	var fromx=0.0,fromy=0.0,endx=0.0,endy=0.0,x=0.0,y = 0.0;
-            var panel = document.getElementById("container");
+            var panel = document.getElementById("vediolist");
             panel.addEventListener("touchstart",function(event){
                 if (event.targetTouches.length == 1) {
                     var touch = event.targetTouches[0];
