@@ -177,6 +177,10 @@
 <script type="text/javascript" src="javascript/navbarscroll.js"></script>
 
 <script type="text/javascript">
+	
+	var x=0,y=0;
+	var touch;
+	
 $(function(){
 
 	//demo示例一到四 通过lass调取，一句可以搞定，用于页面中可能有多个导航的情况
@@ -192,13 +196,13 @@ container.ontouchstart = function(e){
 
 //由于我们只有一点触控，所以直接指向[0]
 
-var touch = e.touches[0];
+touch = e.touches[0];
 
 //获取当前触控点的坐标，等同于MouseEvent事件的clientX/clientY
 
-var x = touch.clientX;
+x = touch.clientX;
 
-var y = touch.clientY;
+y = touch.clientY;
 
 };
 
@@ -209,7 +213,7 @@ container.ontouchmove = function(e){
 //可为touchstart、touchmove事件加上preventDefault从而阻止触摸时浏览器的缩放、滚动条滚动等
 
 e.preventDefault();
-var touch = event.targetTouches[0];
+touch = event.targetTouches[0];
 container.style.top=touch.pageY -y+‘px’;
 
 };
