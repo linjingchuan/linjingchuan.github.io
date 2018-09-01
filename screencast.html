@@ -8,43 +8,37 @@
   
   <!-- InstanceEndEditable -->
   <meta name="keywords" content="某某拼音,某某双拼，双拼输入法，某某输入法,某某笔画，某某选字，某某键盘，某某官方网站，双拼，笔画,筛选,快速，词库。">
-  <meta name="description" content="某某输入法官方网站,提供全新的输入法软件下载, 某某是非常好用的触摸设备输入法,快速、准确、更通用的输入法，小到智能手机，平板，大到触控投影机，智能家电，智能汽车都能使用。">
+  <meta name="description" content="某某输入法官方网站,提供全新的输入法软件下载, 某某是非常好用的触摸设备输入法,快速、准确、更通用的输入法，小到智能手机，平板，大到触控投影机，智能冰箱，智能家电，智能触控机器人，智能汽车都能使用。">
  
  <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
-
-	<link rel="stylesheet" href="css/muban.css" type="text/css">
-	
-	 
-	
-	
-	<style type="text/css">
-	
-
-	.clearfix:after{content:".";display:block;height:0;clear: both;visibility:hidden;}
-	.clearfix{*zoom:1;}
-	.wrap{min-width: 320px;max-width:768px;margin:0 auto;overflow:hidden;position:relative;}
-
-	.htit{line-height:300x;padding:0 .3rem;color:#ff8e2e;font-size: .4rem;margin:1rem 0 .4rem 0}
-	
-
-	.wrapper04 {position:relative;height: 1rem;width: 80%;overflow: hidden;margin:0 auto;background:#ddd}
-	.wrapper04 .scroller {position:absolute}
-	.wrapper04 .scroller li {height: 1rem;color:#333;float: left;line-height: 1rem;font-size:100px;text-align: center}
-	.wrapper04 .scroller li a{color:#333;display:block;margin:0 .3rem}
-	.wrapper04 .scroller li.cur{background:#1cbb9b}
-	.wrapper04 .scroller li.cur a{color:#fff;}
-		
+<script type="text/javascript">
 
 
-</style>
-	
 
 
-	
-	
-	
-	
-	
+
+
+    function IsPC(){  
+               var userAgentInfo = navigator.userAgent;  
+               var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+               var flag = true;  
+               for (var v = 0; v < Agents.length; v++) {  
+                   if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
+               }  
+               return flag;  
+    }
+    /*手机来源跳转*/
+    var source_url=document.referrer;
+    //alert(document.referrer.split('/')[2]);
+    if(!IsPC()){
+        if(source_url=="" || document.referrer.split('/')[2] != "www.wmdsy.work")
+        window.location.href = "http://www.wmdsy.work/index_mobile";
+    }
+    
+    var CURRENT_PAGE = "home";
+</script>
+<link rel="stylesheet" href="css/muban.css" type="text/css">
+
 <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
 </head>
 <body>
@@ -151,29 +145,10 @@
 	 </div>
 	<div id="bottom">
 	    <div id="bottom_mainarea">
-			Copyright © 2018 WMDSY.WORK  All Rights Reserved. 我们的声音工作室 版权所有
+			Copyright © 2018 WMDSY.WORK  All Rights Reserved. 某某输入法工作室 版权所有
 		</div>
 	</div>
 	
-
-	
-	
-
-	
-
-
-<script>
-    function refresh(videoname,videotext){
-	  document.getElementById("v1").src="mp4/"+videoname+".mp4"; 
-	    var vedio=document.getElementById("video");
-	    vedio.load();
-	    vedio.play();
-	  var obj = document.getElementById("p");
-    obj.innerHTML= ""+videotext; 
-
-}
-	  
-  </script>
 
 </body>
 <!-- InstanceEnd --></html>
