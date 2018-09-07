@@ -107,27 +107,27 @@ a:hover{
 }
 #download{
     float:left;
-	height:130px;
-	width:200px;
+	height:180px;
+	width:180px;
 	display:block;
 	position:absolute;
-	margin-left:780px;
-	margin-top:-200px;
+	margin-left:800px;
+	margin-top:-180px;
 	z-index:999;
 }
 #dw-link{
     
-    height:130px;
-    width:200px;
+    height:180px;
+    width:180px;
 	display:block;
 	float:left;
 }
 #dw-link a{
 	margin-top:8px;
 	margin-bottom:8px;
-    height:50px;
-	line-height:50px;
-    width:200px;
+    height:40px;
+	line-height:40px;
+    width:180px;
 	color:#222222;
 	display:block;
 	float:left;
