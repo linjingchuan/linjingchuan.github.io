@@ -107,17 +107,17 @@ a:hover{
 }
 #download{
     float:left;
-	height:180px;
+	height:210px;
 	width:180px;
 	display:block;
 	position:absolute;
 	margin-left:800px;
-	margin-top:-190px;
+	margin-top:-220px;
 	z-index:999;
 }
 #dw-link{
     
-    height:180px;
+    height:210px;
     width:180px;
 	display:block;
 	float:left;
@@ -273,9 +273,9 @@ padding:0 0;
 	background-color:#202020;
 }
 #insttuction_word{
-    height:60px;
-	line-height:20px;
-    width:200px;
+    height:90px;
+	line-height:30px;
+    width:180px;
 	float:left;
 }
 
