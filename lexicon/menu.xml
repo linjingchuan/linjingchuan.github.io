@@ -1,1 +1,50 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<items text="基础词库">
+		<item text="基础词库" url="jichuciku"></item>
+		<item text="成语" url="chengyu"></item>
+		<item text="俗语" url="suyu"></item>
+		<item text="歇后语" url="xiehouyu"></item>
+		<item text="古诗词" url="gushici"></item>
+	</items>
+	<items text="医学">
+		<item text="疾病" url="jibing"></item>
+		<item text="药物" url="yaowu"></item>
+		<item text="中医" url="zhongyi"></item>
+		<item text="西医" url="xiyi"></item>
+	</items>
+	<items text="科学">
+		<item text="物理" url="wuli"></item>
+		<item text="天体" url="tianti"></item>
+		<item text="化学" url="huaxue"></item>
+		
+	</items>
+	<items text="工程">
+		<item text="建筑" url="jianzhu"></item>
+		<item text="行业" url="hangye"></item>
+	</items>
+	<items text="经济">
+		<item text="金融" url="jingrong"></item>
+	</items>
+	<items text="计算机">
+		<item text="互联网" url="hulianwang"></item>
+		<item text="电子商务" url="dianzishangwu"></item>
+	</items>
+	<items text="地理">
+		<item text="地理" url="dili"></item>
+	</items>
+	<items text="社会">
+		<item text="媒体" url="meiti"></item>
+	</items>
+	<items text="生物">
+		<item text="人体" url="renti"></item>
+	</items>
+	<items text="历史">
+		<item text="历史名人" url="lishimingren"></item>
+	</items>
+	<items text="人物">
+		<item text="明星" url="mingxing"></item>
+	</items>
+	
+	
+</root>
