@@ -13,22 +13,25 @@
 		<item text="中医" url="zhongyi"></item>
 		<item text="西医" url="xiyi"></item>
 	</items>
-	<items text="科学">
-		<item text="物理" url="wuli"></item>
-		<item text="天体" url="tianti"></item>
-		<item text="化学" url="huaxue"></item>
-		
-	</items>
-	<items text="工程">
-		<item text="建筑" url="jianzhu"></item>
-		<item text="行业" url="hangye"></item>
-	</items>
-	<items text="经济">
-		<item text="金融" url="jingrong"></item>
-	</items>
+	
 	<items text="计算机">
 		<item text="互联网" url="hulianwang"></item>
 		<item text="电子商务" url="dianzishangwu"></item>
+	</items>
+	<items text="科学">
+		<item text="物理" url="wuli"></item>
+		<item text="天文" url="tianwen"></item>
+		<item text="化学" url="huaxue"></item>
+
+	</items>
+	<items text="行业">
+		<item text="建材" url="jiancai"></item>
+	</items>
+	<items text="工程">
+		<item text="工程" url="jianzhu"></item>
+	</items>
+	<items text="经济">
+		<item text="金融" url="jingrong"></item>
 	</items>
 	<items text="地理">
 		<item text="地理" url="dili"></item>
@@ -41,10 +44,17 @@
 	</items>
 	<items text="历史">
 		<item text="历史名人" url="lishimingren"></item>
+	</items>	
+	<items text="文学">
+		<item text="现代文学" url="xiandaiwenxue"></item>
+	</items>
+	<items text="农业">
+		<item text="农作物" url="nongzuowu"></item>
+	</items>
+	<items text="美食">
+		<item text="菜谱" url="caipu"></item>
 	</items>
 	<items text="人物">
 		<item text="明星" url="mingxing"></item>
 	</items>
-	
-	
 </root>
