@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<items text="基础词库">
+		
+		<item text="test"></item>
 		<item text="基础词库"></item>
 		<item text="成语"></item>
 		<item text="俗语"></item>
