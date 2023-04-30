@@ -1,9 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<script type="text/javascript"> var getPinYinCode=function(pinyin,x,y){alert("pinyin="+pinyin+",x="+x+",y="+y);
-                                                                       window.AndroidFunction.unableFloatMenu();
-                                                                      }; </script>
+<script type="text/javascript">
+    var getPinYinCode = function(pinyin, x, y)
+    {
+        var div;
+        if (document.getElementById("createDiv") == null) {
+            div = document.createElement("div");
+        } else {
+            div = document.getElementById("createDiv")
+        }
+        var createDiv = div;
+        createDiv.id = "createDiv";
+        createDiv.style.color = "#ff0000ff";
+        createDiv.style. float="left";
+        createDiv.style.zIndex = "10000000";
+        createDiv.style.position = "absolute";
+        createDiv.style.fontSize = "50px";
+        createDiv.style.border = "1px solidred";
+//						createDiv.style.overflow="hidden";
+        createDiv.innerHTML = pinyin;
+        createDiv.style.left = "" + (x1 - createDiv.clientWidth / 2) + "px";
+        createDiv.style.top = "" + (y1 - createDiv.clientHeight / 2) + "px";
+        document.body.appendChild(createDiv);
+        window.AndroidFunction.unableFloatMenu();
+    };
+    </script>
   </head>
   <body>
   </body>
